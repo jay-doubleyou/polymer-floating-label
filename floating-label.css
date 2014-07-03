@@ -1,0 +1,39 @@
+label {
+    display     : block;
+    position    : relative;
+    width       : 300px;
+}
+
+label span.label {
+    display     : block;
+    position    : absolute;
+    top         : .7em;
+    margin-left : 4px;
+    font-size   : .6em;
+    font-weight : bold;
+    color       : #666;
+    opacity     : 0;
+    transition  : color .5s ease, top .25s ease, opacity .25s ease;
+}
+
+label input {
+    margin-top  : 1em;
+    padding     : 2px;
+    color       : #000;
+    border      : 1px solid transparent;
+    outline     : none;
+}
+
+label input:focus {
+    -webkit-box-shadow : none;
+            box-shadow : none;
+}
+
+label input:focus + span.label {
+    color       : #0091F2;
+}
+
+label input:not(.empty) + span.label {
+    top         : 0;
+    opacity     : 1;
+}

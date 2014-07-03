@@ -1,0 +1,22 @@
+<link rel="import" href="../polymer/polymer.html">
+<polymer-element name="floating-label" attributes="label">
+    <template>
+        <link rel="stylesheet" href="floating-label.css">
+        <label class="input-text">
+            <input class="empty" type="text" on-keyup="{{floatLabel}}" on-blur="{{floatLabel}}" placeholder="{{label}}"/>
+            <span class="label">{{label}}</span>
+        </label>
+    </template>
+    <script>
+        Polymer('floating-label', {
+            floatLabel: function(event, detail, sender) {
+                if (sender.value == '') {
+                    sender.classList.add('empty');
+                }
+                else {
+                    sender.classList.remove('empty');
+                }
+            }
+        });
+    </script>
+</polymer-element>
