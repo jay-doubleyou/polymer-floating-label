@@ -1,7 +1,5 @@
-polymer-floating-label
-======================
-
 floating input label with polymer
+==
 
 ![example](https://raw.githubusercontent.com/jay-doubleyou/polymer-floating-label/master/example.png)
 
