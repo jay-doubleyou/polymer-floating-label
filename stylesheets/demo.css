@@ -1,0 +1,29 @@
+#usage {
+    margin-bottom   : 2em;
+}
+
+#demo-container-1,
+#demo-container-2 {
+    border          : 1px dotted #AAA;
+    margin-bottom   : 2em;
+}
+
+#demo-container-1 {
+    background-color: #FFF;
+    padding         : 1em;
+}
+
+#demo-container-1 .floating-label {
+    margin-bottom   : 1em;
+    border-bottom   : 1px solid #999;
+    width           : 200px;
+}
+
+#demo-container-2 {
+    padding         : 1em;
+}
+
+#demo-container-2 .floating-label {
+    width           : 200px;
+    margin-bottom   : .5em;
+}
